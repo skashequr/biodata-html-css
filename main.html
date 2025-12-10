@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Biodata - Sheikh Ashequr Rahman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #f9f5f0;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .biodata-container {
+            width: 210mm;
+            min-height: 297mm;
+            background-color: #ffffff;
+            background-image: radial-gradient(#d4af37 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            margin: 20px auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .border-frame {
+            border: 2px solid #d4af37; /* Gold Border */
+            height: 100%;
+            padding: 20px;
+            position: relative;
+        }
+
+        .border-frame::before {
+            content: "";
+            position: absolute;
+            top: 4px; left: 4px; right: 4px; bottom: 4px;
+            border: 1px solid #d4af37;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: #1a202c;
+            letter-spacing: 2px;
+        }
+
+        .bismillah {
+            font-family: 'Amiri', serif;
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2.section-heading {
+            font-family: 'Cinzel', serif;
+            color: #89640b; /* Dark Gold */
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2.section-heading i {
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+
+        .data-row {
+            display: flex;
+            margin-bottom: 6px;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            border-bottom: 1px dashed #f0f0f0;
+            padding-bottom: 2px;
+        }
+        
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            width: 40%;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .value {
+            width: 60%;
+            color: #1a202c;
+            font-weight: 500;
+        }
+
+        .tag {
+            background-color: #fffbeb;
+            border: 1px solid #fcd34d;
+            color: #92400e;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* Print Button - Hidden when printing */
+        @media print {
+            body { background: none; margin: 0; }
+            .biodata-container { margin: 0; box-shadow: none; width: 100%; height: 100%; }
+            .no-print { display: none !important; }
+            button { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Print Button -->
+    <div class="no-print text-center mt-6 mb-4">
+        <button onclick="window.print()" class="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 rounded shadow transition flex items-center gap-2 mx-auto font-sans">
+            <i class="fas fa-print"></i> Save / Print
+        </button>
+    </div>
+
+    <div class="biodata-container">
+        <div class="border-frame">
+            
+            <!-- Header Section -->
+            <div class="text-center mb-6">
+                <div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+                <h3 class="text-gray-500 uppercase tracking-widest text-xs mb-1">Marriage Profile</h3>
+                <h1 class="text-3xl font-bold mb-2">Sheikh Ashequr Rahman</h1>
+                <div class="w-24 h-0.5 bg-yellow-600 mx-auto mb-2"></div>
+                <p class="text-gray-600 italic text-base">"Seeking a pious and kind-hearted companion"</p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
+                
+                <!-- Left Column -->
+                <div>
+                    <h2 class="section-heading"><i class="fas fa-user"></i> Personal Details</h2>
+                    <div class="data-row"><span class="label">Date of Birth:</span> <span class="value">25th April, 2001</span></div>
+                    <div class="data-row"><span class="label">Height:</span> <span class="value">5’ 7’’</span></div>
+                    <div class="data-row"><span class="label">Weight:</span> <span class="value">70 kgs</span></div>
+                    <div class="data-row"><span class="label">Body Type:</span> <span class="value">Slim</span></div>
+                    <div class="data-row"><span class="label">Complexion:</span> <span class="value">Shamla</span></div>
+                    <div class="data-row"><span class="label">Marital Status:</span> <span class="value">Single</span></div>
+                    <div class="data-row"><span class="label">Religion:</span> <span class="value">Islam (Sunni)</span></div>
+                    <div class="data-row"><span class="label">Nationality:</span> <span class="value">Bangladeshi</span></div>
+                    <div class="data-row"><span class="label">Languages:</span> <span class="value">Bangla (Mother Tongue), English</span></div>
+
+                    <h2 class="section-heading"><i class="fas fa-briefcase"></i> Career & Income</h2>
+                    <div class="mb-2">
+                        <div class="font-bold text-gray-800 text-lg">Creative Editor</div>
+                        <div class="text-gray-600">Tech Cafe</div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="font-bold text-gray-800 text-lg">Former Software Engineer</div>
+                        <div class="text-gray-600">Doyel Digital (7 Years Experience)</div>
+                    </div>
+                    <div class="mt-2 pt-2 border-t border-dashed border-gray-300">
+                        <div class="flex">
+                            <span class="label text-gray-700">Monthly Income:</span>
+                            <span class="value font-bold text-gray-900">35+ (Discussable)</span>
+                        </div>
+                    </div>
+
+                    <h2 class="section-heading"><i class="fas fa-laptop-code"></i> Skills</h2>
+                    <div class="text-sm text-gray-700 leading-relaxed">
+                        <strong>Programming:</strong> C++, C, Java, Python, JavaScript.<br>
+                        <strong>Other Skills:</strong> Robotics, Video Editing, Digital Marketing.
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <h2 class="section-heading"><i class="fas fa-users"></i> Family Details</h2>
+                    <div class="data-row"><span class="label">Father:</span> <span class="value">Late Sheikh Habibur Rahman</span></div>
+                    <div class="data-row"><span class="label">Mother:</span> <span class="value">Begum Nazma Rahman</span></div>
+                    <div class="data-row"><span class="label">Brothers:</span> <span class="value">4 (I am the eldest)</span></div>
+                    <div class="data-row"><span class="label">Sisters:</span> <span class="value">None</span></div>
+                    <div class="mt-2 text-gray-600 text-sm italic border-l-2 border-yellow-600 pl-3">
+                        "There are five members in my family. My father has passed away. My younger brother has a job, and the rest are studying."
+                    </div>
+
+                    <h2 class="section-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="mb-2">
+                        <div class="font-bold text-gray-800 text-base">M.Sc in Computer Science</div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="font-bold text-gray-800 text-base">B.Sc in Mathematics</div>
+                        <div class="text-gray-600 text-sm">Passing Year: 2025</div>
+                    </div>
+
+                    <h2 class="section-heading"><i class="fas fa-map-marker-alt"></i> Location</h2>
+                    <div class="mb-1 text-sm">
+                        <strong class="text-gray-700">Present Address:</strong>
+                        <span class="text-gray-600">Tongi, Gazipur</span>
+                    </div>
+                    <div class="text-sm">
+                        <strong class="text-gray-700">Permanent Address:</strong>
+                        <span class="text-gray-600">Gazaria, Madaripur</span>
+                    </div>
+
+                    <h2 class="section-heading"><i class="fas fa-star"></i> Hobbies</h2>
+                    <div class="flex flex-wrap">
+                        <span class="tag">Nasheed</span>
+                        <span class="tag">Reading Books</span>
+                        <span class="tag">Coding</span>
+                        <span class="tag">Squash</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Width Sections -->
+            <div class="mt-4">
+                <h2 class="section-heading"><i class="fas fa-heart"></i> Partner Preference</h2>
+                <p class="text-gray-700 text-base leading-relaxed text-justify">
+                    I am looking for a girl who is kind-hearted, educated, and respects her elders. Age is not a barrier. I value piety and family values.
+                </p>
+            </div>
+
+            <!-- Contact Footer -->
+            <div class="mt-8 text-center border-t border-gray-200 pt-4">
+                <h3 class="font-cinzel text-lg text-gray-800 mb-2">Contact Information</h3>
+                <div class="flex flex-col md:flex-row justify-center gap-6 text-base font-medium text-gray-700">
+                    <div><i class="fas fa-phone text-yellow-600 mr-2"></i> +880 1408-960813</div>
+                    <div><i class="fas fa-envelope text-yellow-600 mr-2"></i> sheikhashequrr@gmail.com</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
